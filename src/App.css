@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+/* aqui começa a minha estilização */
+
+body {
+  background-color: #457B9D;
+}
+
+h1 {
+  text-align: center;
+  color: #F1FAEE;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 35px;
+  background-color: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+  margin: auto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #F1FAEE;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #F1FAEE;
+  color: black;
+  font-size: 12pt;
+  outline: none;
+  box-shadow: 0px 10px 40px #00000056;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 40%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #F1FAEE;
+  background-color:  #457B9D;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #316686;
+}
