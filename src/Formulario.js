@@ -1,25 +1,22 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-// $ curl https://api.airtable.com/v0/apptGOeGo7k25YE3m/Table%201 \
-// -H "Authorization: Bearer keyNkAzl2oSWmnZ3V"
-
 function Formulario() {
     const salvarUsuarios = () => {
-      axios.post("https://api.airtable.com/v0/apptGOeGo7k25YE3m/Table%201", {
+      axios.post("https://api.airtable.com/v0/appUhHVIWjRSdgiCA/usuarios", {
           records: [
             {
               fields: {
                 'name': nome,
                 'email': email,
-                'password': senha
+                'senha': senha
               }
             },
           ]
       },
       {
         headers: {
-          'Authorization': 'Bearer keyNkAzl2oSWmnZ3V',
+          'Authorization': 'Bearer keyA9S7d5jHo14MwE',
           "Content-Type": "application/json",
           "Accept": "application/json"
         }
